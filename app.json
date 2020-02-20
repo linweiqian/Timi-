@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/shop/shop",
+    "pages/pay/pay",
+    "pages/detail/detail",
+    "pages/car/car",
+    "pages/my/my",
+    "pages/category/category"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F89C19",
+    "navigationBarTitleText": "TiMi果汁",
+    "navigationBarTextStyle": "white",
+    "backgroundColorTop": "#F89C19",
+    "backgroundColor": "#fff"
+  },
+  "tabBar": {
+    "selectedColor": "#F89C19",
+    "backgroundColor": "#F8F8FB",
+    "borderStyle": "black",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/home_s.png"
+      },
+      {
+        "text": "订单",
+        "pagePath": "pages/shop/shop",
+        "iconPath": "/images/order.png",
+        "selectedIconPath": "/images/order_s.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/my/my",
+        "iconPath": "/images/mine.png",
+        "selectedIconPath": "/images/mine_s.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,85 @@
+.order-box{
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: #F1F1F1;
+  padding: 20px;
+}
+.nav-message{
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 10%;
+  height: 200px;
+  line-height: 200px;
+  background-color: white;
+}
+.order-box button{
+  margin-top: 20px;
+  background-color: goldenrod;
+}
+scroll-view {
+  width: 100%;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.shopOrder {
+  width: 100%;
+  padding: 8px;
+  background-color: #fff;
+  border-top: 1px solid #e8e8e8;
+}
+
+.shopOrder .img {
+  float: left;
+  width: 30%;
+}
+
+.shopOrder .img image {
+  width: 80px;
+  height: 80px;
+}
+
+.shopOrder .detailText {
+  float: left;
+  width: 40%;
+  margin-top: 15px;
+}
+
+.shopOrder .detailText text {
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.shopOrder .price {
+  float: left;
+  width: 30%;
+  text-align: right;
+  margin-top: 15px;
+  
+}
+
+.shopOrder .price text {
+  display: block;
+  text-align: center;
+  
+  margin-top: 5px;
+  padding-right: 15px;
+}
+.success{
+  font-size: 14px;
+  color: red;
+  margin-top: 10px;
+}
+.send{
+  font-size: 12px;
+  color: #E1E1E1;
+}

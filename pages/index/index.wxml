@@ -1,0 +1,65 @@
+<!-- 轮播图 -->
+<view class='header_player'>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{background}}" wx:key="*this">
+      <swiper-item>
+        <view>
+          <image src='{{item}}'></image>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='ul clearfix '>
+    <view class='li'>
+    <navigator url='/pages/category/category' hover-class='none'>
+      <text class='start'>开始订餐</text>
+    </navigator>
+    </view>
+    <view class='li active'>
+     <navigator url='/pages/category/category' hover-class='none'>
+      <text class='booking'>预订订餐</text>
+      </navigator>
+    </view>
+  </view>
+</view>
+<!-- 广告 -->
+<view class='gg_content '>
+  <image src='../../images/2-1.jpg'></image>
+</view>
+<!-- 滑动轮播 -->
+<view class='slide clearfix'>
+  <scroll-view scroll-x="true" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-left="{{scrollTop}}">
+    <view class="scroll-x">
+      <view wx:for-items="{{scrolls}}" wx:key="name">
+        <view class='scroll-box'>
+          <image src='{{item.name}}'></image>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+<!-- 猜你喜欢 -->
+ <view class='nav-like clearfix'>
+    <text class='h1'>猜你喜欢</text>
+    <navigator url='/pages/detail/detail' hover-class='none'>
+    <view class='li'>
+      <view class='nav-left'>
+        <image src='../../images/shop1.jpg'></image>
+      </view>
+      <view class='nav-right'>
+        <view class='shopname'>
+          <text>商品1</text>
+        </view>
+        <view class='address'>
+          <text>广州</text>
+        </view>
+        <view class='shopprice'>
+          <text>￥1.00</text>
+          <icon class='./iconfont/.icon-gouwuche:before'></icon>
+        </view>
+
+      </view>
+    </view>
+    </navigator>
+  </view>
+  <view class='no-more'>暂无更多</view>

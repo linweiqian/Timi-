@@ -1,0 +1,47 @@
+<view class="layout">
+    <view class="addRess">
+    <text>+添加收货地址</text>
+</view>
+<scroll-view>
+  <view class="shopOrder clearfix" wx:for="{{carts}}" wx:key="*this">
+    <view class="img">
+      <image src="{{item.pic}}"></image>
+    </view>
+    <view class="detailText">
+        <text>{{item.name}}</text>
+    </view>
+    <view class="price">
+      <text>￥{{item.price}}</text>
+      <text>*{{item.num}}</text>
+    </view>
+  </view>
+    <view class="prefrential">
+      <text>我的优惠卷</text>
+    </view>
+    <view class="leaveWord">
+      <text>填选：买家留言</text>
+    </view>
+    <view class="leaveWord">
+     <text> 填选：是否开发票</text>
+    </view>
+    <view class="ul" wx:for="{{carts}}">
+      <view class="li">
+        <text class="textname">商品总价</text>
+        <text class="textprice"> ￥{{item.price*item.num}}</text>
+      </view>
+      <view class="li">
+        <text class="textname">打折减</text>
+        <text class="textprice"> -￥0.00</text>
+      </view>
+      <view class="li">
+        <text class="textname">邮费</text>
+        <text class="textprice"> +￥0.00</text>
+      </view>
+    </view>
+</scroll-view> 
+  <view class="submit">
+    <text class="pay">实付款:</text>
+    <text class="price">￥{{total}}</text>
+    <text class="btn" bindtap="submit">提交订单</text>
+  </view>
+</view>

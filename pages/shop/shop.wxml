@@ -1,0 +1,24 @@
+<view class='order-box'>  
+  <scroll-view wx:if="{{carts.length>0}}">
+    <view class="shopOrder clearfix" wx:for="{{carts}}" wx:key="*this">
+    <view class="img">
+      <image src="{{item.pic}}"></image>
+    </view>
+    <view class="detailText">
+        <text>{{item.name}}</text>
+    </view>
+    <view class="price">
+      <text class="success">支付完成</text>
+      <text class="send">正在配送中</text>
+    </view>
+  </view>
+  </scroll-view>
+  <view wx:else>
+    <view class='nav-message'>
+      <text>暂无订单消息</text>
+    </view>
+    <navigator url="/pages/category/category" hover-class="none">
+    <button>开始点单</button>
+    </navigator>
+    </view>
+</view>

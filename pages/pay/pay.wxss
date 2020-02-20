@@ -1,0 +1,154 @@
+.layout {
+  width: 100%;
+  background-color: #f0f0f0;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.addRess {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 30px;
+  background-color: #fff;
+  z-index: 10000;
+  text-align: center;
+  line-height: 30px;
+}
+
+.addRess  text {
+  font-size: 12px;
+}
+
+scroll-view {
+  width: 100%;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.shopOrder {
+  width: 100%;
+  padding: 8px;
+  background-color: #fff;
+  border-top: 1px solid #e8e8e8;
+}
+
+.shopOrder .img {
+  float: left;
+  width: 30%;
+}
+
+.shopOrder .img image {
+  width: 80px;
+  height: 80px;
+}
+
+.shopOrder .detailText {
+  float: left;
+  width: 40%;
+  margin-top: 15px;
+}
+
+.shopOrder .detailText text {
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.shopOrder .price {
+  float: left;
+  width: 30%;
+  text-align: right;
+}
+
+.shopOrder .price text {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: red;
+  margin-top: 5px;
+}
+
+.prefrential {
+  width: 100%;
+  font-size: 14px;
+  height: 30px;
+  margin: 10px 0px;
+  background-color: #fff;
+  padding: 8px;
+  line-height: 30px;
+}
+
+.leaveWord {
+  width: 100%;
+  font-size: 14px;
+  height: 30px;
+  margin: 10px 0px;
+  background-color: #fff;
+  padding: 8px;
+}
+
+.leaveWord text {
+  width: 30%;
+  height: 30px;
+  line-height: 30px;
+}
+
+.ul {
+  width: 100%;
+  margin-top: 10px;
+}
+.ul .li{
+  background-color: #fff;
+  border-bottom: 1px solid #F0F0F0;
+  height: 30px;
+  line-height: 30px;
+  padding: 10px;
+}
+.ul .li text.textname{
+  display: inline-block;
+  width: 70%;
+  height: 30px;
+}
+.ul .li text.textprice{
+  display: inline-block;
+  width: 30%;
+  height: 30px;
+  text-align: right;
+}
+.submit{
+  height: 50px;
+  width: 100%;
+  background-color: #E1E1E1;
+  position: fixed;
+  z-index: 1000;
+  line-height: 50px;
+  bottom: 0px;
+  left: 0px;
+  padding:0 10px;
+}
+.submit .pay{
+  height: 50px;
+  text-align: right;
+  display: inline-block;
+}
+.submit .price{
+  color: red;
+  font-size: 14px;
+  margin-right: 10px;
+  
+}
+.submit .btn{
+  float: right;
+  text-align: center;
+  background-color: #FD603D;
+  width:30%;
+  height: 50px;
+  display: inline-block;
+}

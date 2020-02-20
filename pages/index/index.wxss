@@ -1,0 +1,129 @@
+/* 轮播 */
+.header_player {
+  width: 100%;
+}
+.header_player image {
+  width: 100%;
+}
+.header_player .ul {
+  width: 100%;
+  margin: 30px 0px;
+  height: 34px;
+  display: flex;
+}
+
+.header_player .ul .li {
+  width: 100%;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 10px;
+  border: 1px solid #f89d23;
+  margin: 0 23px;
+}
+.header_player .ul .active{
+  width: 100%;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 10px;
+  border: 1px solid #B9D9A6;
+  margin: 0 23px;
+}
+.header_player .ul .li .start {
+  font-size: 12px;
+  color: #f89d23;
+}
+
+.header_player .ul .li .booking {
+  font-size: 12px;
+  color: #b9d9a6;
+}
+/* 广告 */
+.gg_content {
+  width: 100%;
+  height: 185px;
+  margin-right: 15px;
+}
+
+.gg_content image {
+  width: 100%;
+  height: 185px;
+  margin-right: 15px;
+}
+/* 滑动轮播 */
+.slide {
+  width: 100%;
+}
+
+.slide image {
+  width: 150px;
+  height: 85px;
+}
+.slide .scroll-x {
+  display: flex;
+  flex-direction: row; 
+}
+.slide .scroll-box{
+  padding-left: 10px;
+  margin: 20px 0px;
+}
+/* 猜你喜欢 */
+.nav-like{
+  width: 100%;
+  background-color: #F5F6F7;
+}
+.nav-like .h1{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 3px solid white;
+  padding-left: 5px;
+  color: #F89C19;
+  display: inline-block;
+}
+.nav-like .li{
+  width: 100%;
+  padding: 10px 6px;
+  position: relative;
+  height: 100px;
+}
+.nav-like .li .nav-left{
+  float: left;
+  width: 30%;
+}
+.nav-like .li .nav-left image{
+ width: 100px;
+ height: 80px;
+}
+.clearfix::after{
+  display: block;
+  clear: both;
+  content: '';
+  visibility: hidden;
+}
+.nav-like .li .nav-right{
+  width: 70%-12px;
+  padding-left: 12px;
+  float: left;
+}
+.nav-like .nav-right .shopname{
+  margin-top: 10px;
+}
+.nav-like .nav-right .address text{
+  font-size: 12px;
+  color: #9292A0;
+}
+.nav-like .nav-right .shopprice text{
+  color: red;
+}
+.nav-like .nav-right icon{
+  position: absolute;
+  right:20px;
+}
+.no-more{
+  font-size: 12px;
+  color: #D03634;
+  text-align: center;
+  margin:15px 0;
+}

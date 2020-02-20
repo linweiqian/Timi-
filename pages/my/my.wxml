@@ -1,0 +1,30 @@
+<view class='my-box'>
+  <view class='img'>
+    <image src='{{userInfo.avatarUrl}}'></image>
+  </view>
+ <view class='login-name'>
+    <text>{{userInfo.nickName}}</text>
+ </view>
+</view>
+<view class='list'>
+   <view class='li'>
+    我的优惠
+  <icon class='./iconfont/icon-youjiantou:before'></icon>
+  </view>
+   <view class='li'>
+    联系客服
+  <icon class='./iconfont/icon-youjiantou:before'></icon>
+  </view>
+   <view class='li'>
+    平台须知
+  <icon class='./iconfont/icon-youjiantou:before'></icon>
+  </view>
+   <view class='li'>
+    我的钱包
+  <icon class='./iconfont/icon-youjiantou:before'></icon>
+  </view>
+  <view class='li'>
+    收货地址
+  <icon class='./iconfont/icon-youjiantou:before'></icon>
+  </view>
+</view>

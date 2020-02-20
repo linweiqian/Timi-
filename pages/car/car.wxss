@@ -1,0 +1,112 @@
+scroll-view{
+  width: 100%;
+  margin-bottom: 50px;
+} 
+.shopbox{
+  width: 100%;
+  padding: 6px;
+  background-color: #F6F5F7;
+  position: relative;
+}
+.shopbox .checkbox{
+  float: left;
+  margin-top: 25px;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.shopbox .img{
+  float: left;
+}
+.shopbox .img image{
+  width: 80px;
+  height: 80px;
+}
+.shopbox .right-nav{
+  float: left;
+  padding-left: 5px;
+  margin-top: 10px;
+}
+.shopbox .shopname{
+  font-size: 14px;
+}
+.shopbox .shopprice{
+  font-size: 12px;
+  color: red;
+  display: block;
+}
+.clearfix::after{
+  content: '';
+  clear: both;
+  overflow: hidden;
+  display: block;
+}
+.shopbox .sel-num{
+  position: absolute;
+  width: 100px;
+  display: flex;
+  flex-wrap: column;
+  bottom: 15px;
+  right: 68px;
+  text-align: center;
+}
+.shopbox .sel-num .add{
+  
+  flex: 1;
+  border: 1px solid gray;
+}
+.shopbox .sel-num .num{
+  border: 1px solid gray;
+  flex: 1;
+}
+.shopbox .sel-num .rec{
+  flex: 1;
+  border: 1px solid gray;
+}
+.shopbox  .remove{
+  position: absolute;
+  bottom: 15px;
+  right: 35px;
+}
+/* 底部栏 */
+.settlement-box{
+  position: fixed;
+  z-index: 1000;
+  bottom: 0px;
+  left: 0px;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #A6A3A5;
+  background-color: #fff;
+}
+.settlement-box radio{
+  margin-left: 15px;
+  line-height: 45px;
+  flex: 1;
+}
+.settlement-box .allPrice{
+  line-height: 45px;
+  margin-left: 15px;
+  flex: 2;
+}
+.settlement-box .allPrice text{
+  font-size: 16px;
+  line-height: 45px;
+  color: red;
+}
+.settlement-box .setTo{
+  line-height: 45px;
+  text-align: center;
+  flex: 1;
+  background-color: red;
+  color: white;
+}
+
+.no-data{
+  text-align: center;
+  color: red;
+  font-size: 12px;
+  margin-top: 200px;
+}

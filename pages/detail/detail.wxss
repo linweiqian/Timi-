@@ -1,0 +1,156 @@
+/* 轮播 */
+.header_player {
+  width: 100%;
+}
+.header_player image {
+  width: 100%;
+}
+.detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.detail .title {
+  font-size: 40rpx;
+  height: 15px;
+  color: black;
+  float: left;
+}
+.detail .price {
+  color: red;
+  font-size: 40rpx;
+  float: right;
+}
+.line_flag {
+  width: 80rpx;
+  height: 1rpx;
+  display: inline-block;
+  margin: 20rpx auto;
+  background-color: gainsboro;
+  text-align: center;
+}
+.line {
+  width: 100%;
+  height: 2rpx;
+  display: inline-block;
+  margin: 20rpx 0rpx;
+  background-color: gainsboro;
+  text-align: center;
+}
+.detail-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  float: left;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100rpx;
+}
+.button-green {
+  background-color: #4caf50; /* Green */
+}
+.button-red {
+  background-color: #f44336; /* 红色 */
+}
+.image_detail {
+  width: 100%;
+}
+button {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30rpx;
+  border-radius: 0rpx;
+  width: 50%;
+  height: 100%;
+  line-height: 100rpx;
+}
+.detail-nav image {
+  width: 70rpx;
+  height: 50rpx;
+  margin: 20rpx 40rpx;
+}
+.line_nav {
+  width: 5rpx;
+  height: 100%;
+  background-color: gainsboro;
+}
+/* 占位 */
+.temp {
+  height: 100rpx;
+}
+text {
+  display: block;
+  font-size: 30rpx;
+  margin: 10rpx;
+}
+
+.text-remark {
+  display: block;
+  font-size: 25rpx;
+  margin: 10rpx;
+}
+.separate{
+  background: #F1F3F2;
+  height: 6px;
+  width: 100%;
+  display: inline-block;
+}
+/* 底部栏 */
+.tabel_bar{
+  width: 100%;
+  height: 45px;
+  background-color: ghostwhite;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.tabel_bar .carTo{
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+.tabel_bar .carTo .num{
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  background-color: red;
+  border-radius: 50%;
+  font-size: 10px;
+  top: 0px;
+  right: 25px;
+}
+.tabel_bar .Kefu{
+  background-color: red;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  flex: 1;
+  color: white;
+}
+.tabel_bar .addCar{
+  background-color: blue;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  flex: 1;
+  color: white;
+}
+.tabel_bar .buy{
+  background-color: orange;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  flex: 1;
+  color: white;
+}

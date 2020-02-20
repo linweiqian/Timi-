@@ -1,0 +1,30 @@
+<scroll-view scroll='true'>
+  <view wx:if="{{carts.length>0}}">
+  <view class="shopbox clearfix" wx:for="{{carts}}" wx:key="*this">
+   
+      
+      <view class="img">
+        <image src="{{item.pic}}"></image>
+      </view>
+      <view class="right-nav">
+        <text class="shopname">{{item.name}}</text>
+        <text class="shopprice">￥{{item.price}}</text>
+      </view>
+
+    <view class="sel-num">
+      <text class="rec"  bindtap="carRed" data-index="{{index}}">-</text>
+      <text class="num">{{item.num}}</text>
+      <text class="add" bindtap="carAdd" data-index="{{index}}">+</text>
+    </view>
+    <view class="remove" >
+      <icon bindtap="carDel" data-index="{{index}}"  class="./iconfont/icon-iconfontshanchu4:before"></icon>
+    </view>
+  </view>
+  </view>
+  <view wx:else class="no-data">暂无数据</view>
+</scroll-view>
+<!-- 底部栏 -->
+<view class="settlement-box">
+    <view class="allPrice">合计:<text>￥{{total}}</text></view>
+    <view class="setTo" bindtap="buyTo">去结算</view>
+</view>

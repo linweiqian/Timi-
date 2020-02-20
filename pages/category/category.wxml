@@ -1,0 +1,26 @@
+<view class="catogray-box">
+  <!-- 左侧栏 -->
+  <view class='box-left'>
+    <scroll-view scroll-y='true' style='height:{{scrollH}}px'>
+      <view class='nav-items {{curId == item.cate_id? "active":" "}}' wx:for="{{shopArr}}" wx:key="*this" bindtap='seltag' data-index='{{index}}' data-id='{{item.cate_id}}'>
+        {{item.icontext}}
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 右侧栏 -->
+  <view class='box-right clearfix'>
+    <view style='height:{{scrollH}}px'>
+    
+      <view wx:if='{{shopArr[curIndex].ischild}}'>
+
+          <view class='sel-shop' wx:for="{{shopArr[curIndex].children}}" wx:key="*this">
+          <navigator url='/pages/detail/detail' hover-class='none'>
+            <image src='{{item.imgUrl}}'></image>
+            <text>{{item.name}}</text>
+          </navigator>
+          </view>
+      </view>
+      <view wx:else class='nodata_text'>该分类无数据</view>
+    </view>
+  </view>
+</view>
